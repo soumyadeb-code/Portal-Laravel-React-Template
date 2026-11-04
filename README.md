@@ -3,6 +3,11 @@
 This project is a complete conversion of the **Portal Bootstrap 5 Admin Dashboard Template** into a modern, full-stack **Laravel 12** and **React 19** application with MySQL database configuration (`sd_portal`).
 
 ---
+## 📸 Project Preview
+
+![InApp Laravel React Dashboard](public/assets/images/Screenshot.png)
+
+---
 
 ## 🚀 Tech Stack & Features
 
