@@ -1,0 +1,51 @@
+/* Portal Theme Custom Overrides & Full-Size Collapsible Sidebar */
+
+.app-sidepanel {
+    transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+@media (min-width: 1200px) {
+    /* When hidden on desktop, slide sidebar completely out */
+    .app-sidepanel.sidepanel-hidden {
+        left: -260px !important;
+    }
+    
+    .app-sidepanel.sidepanel-visible {
+        left: 0 !important;
+    }
+
+    /* Animate main wrapper expanding to full width */
+    .app-wrapper {
+        transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+
+    /* Full size experience: sidebar collapsed to margin-left 0 */
+    .app-wrapper.full-width {
+        margin-left: 0 !important;
+    }
+}
+
+/* Sidepanel toggler styling */
+.sidepanel-toggler {
+    cursor: pointer;
+    color: #5d6778;
+    padding: 4px 6px;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+    background: transparent;
+    text-decoration: none !important;
+}
+
+.sidepanel-toggler:hover {
+    color: #15a362;
+    background-color: #edfdf6;
+}
+
+.sidepanel-toggler.is-collapsed {
+    color: #15a362;
+    background-color: #edfdf6;
+}
+
+.sidepanel-toggler svg {
+    vertical-align: middle;
+}
